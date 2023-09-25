@@ -338,6 +338,10 @@ Navbar Area Style
 .navbar-area .container-fluid {
   max-width: 1685px;
 }
+.navbar-area .navbar-brand .main-logo {
+  width: 30%;
+  height: 100%;
+}
 .navbar-area .navbar-brand .white-logo {
   display: none;
 }
@@ -1747,38 +1751,60 @@ Others Option For Responsive Area Style
 /*
 Banner Area Style
 ======================================================*/
-.banner-area {
-
-  background: linear-gradient(270deg, #549a9d, #353e7e);
+/* .banner-area {
+  background: linear-gradient(270deg, #353e7e, #549a9d);
   background-size: 400% 400%;
 
-  -webkit-animation: AnimationName 30s ease infinite;
-  -moz-animation: AnimationName 30s ease infinite;
-  -o-animation: AnimationName 30s ease infinite;
-  animation: AnimationName 30s ease infinite;
+  -webkit-animation: AnimationName 40s ease infinite;
+  -moz-animation: AnimationName 40s ease infinite;
+  -o-animation: AnimationName 40s ease infinite;
+  animation: AnimationName 40s ease infinite;
 }
 
 @-webkit-keyframes AnimationName {
-  0%{background-position:0% 50%}
-  50%{background-position:100% 50%}
-  100%{background-position:0% 50%}
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
 @-moz-keyframes AnimationName {
-  0%{background-position:0% 50%}
-  50%{background-position:100% 50%}
-  100%{background-position:0% 50%}
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
 @-o-keyframes AnimationName {
-  0%{background-position:0% 50%}
-  50%{background-position:100% 50%}
-  100%{background-position:0% 50%}
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
 @keyframes AnimationName {
-  0%{background-position:0% 50%}
-  50%{background-position:100% 50%}
-  100%{background-position:0% 50%}
-}
-
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+} */
 
 .banner-area {
   padding-top: 180px;
@@ -1826,13 +1852,16 @@ Banner Area Style
   max-width: 760px;
   position: relative;
 }
-.banner-content span {
+.banner-content span a {
   font-size: 16px;
   font-weight: 500;
   color: #fd7529;
   background-color: rgba(255, 255, 255, 0.12);
   padding: 11px 21px;
   border-radius: 30px;
+}
+.banner-content span a:hover {
+  color: #ffffff;
 }
 .banner-content h1 {
   font-size: 110px;
