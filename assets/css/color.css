@@ -1,10 +1,11 @@
 :root {
-  --primary-01: #57a4a1;
-  --primary-02: #283273;
-  --secondary: #4a4846;
-  --linear-gradient-primary: linear-gradient(
-    93deg,
-    rgba(87, 164, 161, 1) 0%,
-    rgba(40, 50, 115, 1) 79%
-  );
+    --primary-01: #57a4a1;
+    --primary-02: #283273;
+    --secondary: #4a4846;
+    --linear-gradient-primary: linear-gradient(93deg,
+            rgba(87, 164, 161, 1) 0%,
+            rgba(40, 50, 115, 1) 79%);
+    --linear-gradient-primary-revers: linear-gradient(93deg,
+            rgba(40, 50, 115, 1) 0%,
+            rgba(87, 164, 161, 1) 150%);
 }
