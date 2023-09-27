@@ -62,7 +62,7 @@
   }
 
   .mobile-responsive-nav .mobile-responsive-menu.mean-container .mean-nav ul li a.active {
-    color: #f68723 !important;
+    color: var(--primary-01) !important;
   }
 
   .mobile-responsive-nav .mobile-responsive-menu.mean-container .mean-nav ul li li a {
@@ -102,11 +102,11 @@
     width: 35px;
     height: 30px;
     padding-top: 13px;
-    color: #f68723;
+    color: var(--primary-01);
   }
 
   .mobile-responsive-nav .mobile-responsive-menu.mean-container a.meanmenu-reveal span {
-    background: #f68723;
+    background: #ffffff;
     height: 4px;
     margin-top: -8px;
     border-radius: 0;
@@ -5752,7 +5752,7 @@
   }
 
   .business-experience {
-    margin-left: 80px;
+    /* margin-left: 80px; */
   }
 
   .say-card {

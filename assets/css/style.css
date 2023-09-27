@@ -138,7 +138,7 @@ p:last-child {
 }
 
 .bg-color-3d0660 {
-  background-color: #3d0660;
+  background: var(--linear-gradient-primary-revers);
 }
 
 .bg-color-100f0f {
@@ -158,7 +158,7 @@ p:last-child {
 }
 
 .bg-color-f9f9f9 {
-  background-color: #f9f9f9;
+  background-color: #f6f3f066;
 }
 
 .bg-color-f8f8f8 {
@@ -280,7 +280,7 @@ p:last-child {
   font-weight: 500;
   display: inline-block;
   color: var(--primary-01);
-  border: 1px dashed rgba(122, 28, 208, 0.42);
+  border: 1px dashed var(--primary-01);
   border-radius: 30px;
   padding: 6px 28px;
   margin-bottom: 15px;
@@ -295,7 +295,7 @@ p:last-child {
   font-size: 16px;
   font-weight: 500;
   display: inline-block;
-  color: #fd7529;
+  color: var(--primary-01);
   margin-bottom: 15px;
 }
 
@@ -303,6 +303,10 @@ p:last-child {
   font-size: 40px;
   margin-bottom: 0;
   color: #000000;
+}
+
+.section-title p {
+  margin: 1.5rem 0;
 }
 
 .section-heading {
@@ -345,7 +349,8 @@ Navbar Area Style
 ======================================================*/
 .navbar-area {
   border-bottom: 1px solid rgba(255, 255, 255, 0.19);
-  background-color: transparent;
+  background: var(--linear-gradient-primary);
+  /* background-color: transparent; */
   padding-top: 24px;
   padding-bottom: 24px;
 }
@@ -1674,7 +1679,7 @@ Banner Area Style
 Sponsor Area Style
 ======================================================*/
 .partner-area .sponsor-info {
-  box-shadow: 0px 0px 30px rgba(85, 85, 85, 0.07);
+  box-shadow: 0px 0px 60px 0px rgb(85 85 85 / 16%);
   background-color: #ffffff;
   border-radius: 200px;
   padding: 35px 50px;
@@ -1704,7 +1709,7 @@ Our Awesome Features Area Style
   padding-bottom: 3px;
   margin-bottom: 30px;
   border-radius: 100px 0px 100px 0px;
-  box-shadow: 0px 0px 30px rgba(85, 85, 85, 0.1);
+  box-shadow: 0px 0px 60px 0px rgb(85 85 85 / 16%);
   position: relative;
   height: 75%;
 }
@@ -1748,9 +1753,7 @@ Our Awesome Features Area Style
   text-align: center;
   display: block;
   color: #ffffff;
-  /* background: var(--linear-gradient-primary); */
-  /* background: linear-gradient(180deg, #FF2BCA 0%, #FEA420 100%); */
-  background: linear-gradient(30deg, #FD6D6D 13.39%, #ED3389 50%, #D837BF 86.61%);
+  background: var(--linear-gradient-primary-revers);
   position: absolute;
   top: -30px;
   left: 0;
@@ -1782,21 +1785,15 @@ Our Awesome Features Area Style
 }
 
 .features-card.two i {
-  background: linear-gradient(30deg,
-      #910bff 13.39%,
-      #bc0cb7 50%,
-      #f91e85 86.61%);
+  background: var(--linear-gradient-primary);
 }
 
 .features-card.two img {
-  background: linear-gradient(30deg,
-      #910bff 13.39%,
-      #bc0cb7 50%,
-      #f91e85 86.61%);
+  background: var(--linear-gradient-primary);
 }
 
 .features-card.two::before {
-  background: linear-gradient(180deg, #ef1b8e 0%, #980bf5 100%);
+  background: linear-gradient(180deg, #283273 0%, #57a4a1 100%);
 }
 
 .features-card.three i {
@@ -1809,7 +1806,7 @@ Our Awesome Features Area Style
 }
 
 .features-card.three::before {
-  background: linear-gradient(180deg, #f795bd 0%, #6f95fd 100%);
+  background: linear-gradient(180deg, #009688 0%, #000000 100%);
 }
 
 .features-card.four i {
@@ -1942,8 +1939,9 @@ Our Awesome Services Area Style
   margin-top: 30px;
   margin-bottom: 30px;
   border-radius: 100px 0px 100px 0px;
-  box-shadow: 0px 0px 30px rgba(85, 85, 85, 0.1);
+  box-shadow: 0px 0px 60px 0px rgb(85 85 85 / 16%);
   position: relative;
+  height: 80%;
 }
 
 .services-card::before {
@@ -1956,7 +1954,8 @@ Our Awesome Services Area Style
   height: 100%;
   z-index: -2;
   border-radius: 100px 0px 100px 0px;
-  background: linear-gradient(180deg, #f85c76 0%, #dc36b6 100%);
+  background: var(--linear-gradient-primary);
+
 }
 
 .services-card i {
@@ -1969,10 +1968,24 @@ Our Awesome Services Area Style
   text-align: center;
   display: block;
   color: #ffffff;
-  background: linear-gradient(30deg,
-      #fd6d6d 13.39%,
-      #ed3389 50%,
-      #d837bf 86.61%);
+  background: var(--linear-gradient-primary-revers);
+  position: absolute;
+  top: -30px;
+  left: 0;
+  z-index: 2;
+}
+
+.services-card .img-icon {
+  font-size: 48px;
+  width: 90px;
+  height: 90px;
+  padding-top: 6px;
+  line-height: 90px;
+  border-radius: 50%;
+  text-align: center;
+  display: block;
+  color: #ffffff;
+  background: var(--linear-gradient-primary-revers);
   position: absolute;
   top: -30px;
   left: 0;
@@ -2016,16 +2029,11 @@ Our Awesome Services Area Style
 }
 
 .services-card.two::before {
-  background: linear-gradient(180deg, #fa877a 0%, #9b23ea 100%);
+  background: var(--linear-gradient-primary-revers);
 }
 
 .services-card.two i {
-  background: linear-gradient(30deg,
-      #7632ff 13.39%,
-      #bd14d6 31.7%,
-      #e81190 50%,
-      #ff795f 68.3%,
-      #f88f88 86.61%);
+  background: var(--linear-gradient-primary);
 }
 
 .services-card.two .service-shape-2 {
@@ -2040,14 +2048,11 @@ Our Awesome Services Area Style
 }
 
 .services-card.three::before {
-  background: linear-gradient(180deg, #980bf5 0%, #e71994 100%);
+  background: var(--linear-gradient-primary);
 }
 
 .services-card.three i {
-  background: linear-gradient(30deg,
-      #910bff 13.39%,
-      #bc0cb7 50%,
-      #f91e85 86.61%);
+  background: var(--linear-gradient-primary-revers);
 }
 
 .services-card.four {
@@ -2056,15 +2061,11 @@ Our Awesome Services Area Style
 }
 
 .services-card.four::before {
-  background: linear-gradient(180deg, #c432d9 0%, #6c8efe 100%);
+  background: var(--linear-gradient-primary-revers);
 }
 
 .services-card.four i {
-  background: linear-gradient(30deg,
-      #669cfe 13.39%,
-      #8c41fe 37.79%,
-      #c531d8 62.2%,
-      #fe37a1 86.61%);
+  background: var(--linear-gradient-primary);
 }
 
 .services-card.four .service-shape-5 {
@@ -2079,16 +2080,11 @@ Our Awesome Services Area Style
 }
 
 .services-card.five::before {
-  background: linear-gradient(180deg, #5012c8 0%, #9108d0 100%);
+  background: var(--linear-gradient-primary);
 }
 
 .services-card.five i {
-  background: linear-gradient(30deg,
-      #c200d6 13.39%,
-      #b901d5 23.83%,
-      #a105d2 40.86%,
-      #790ccd 62.34%,
-      #4414c6 86.61%);
+  background: var(--linear-gradient-primary-revers);
 }
 
 /*
@@ -2716,7 +2712,7 @@ Why Choose Us Area Style
 }
 
 .why-choose-us-content .report {
-  box-shadow: 0px 0px 30px rgba(85, 85, 85, 0.1);
+  box-shadow: 0px 0px 60px 0px rgb(85 85 85 / 16%);
   border-radius: 70px;
   background-color: #ffffff;
   margin-bottom: 40px;
@@ -2760,6 +2756,11 @@ Why Choose Us Area Style
 
 .choose-img .choose-image {
   display: none;
+}
+
+.choose-img .choose-img-1 {
+  border-radius: 30px;
+  box-shadow: 0px 0px 60px 0px rgb(85 85 85 / 16%);
 }
 
 .choose-img .choose-img-2 {
@@ -2869,7 +2870,7 @@ See Our Latest News Area Style
 }
 
 .blog-card {
-  box-shadow: 0px 0px 30px rgba(85, 85, 85, 0.1);
+  box-shadow: 0px 0px 60px 0px rgb(85 85 85 / 16%);
   background-color: #ffffff;
   margin-bottom: 30px;
   border-radius: 20px;
@@ -4390,7 +4391,7 @@ Home Three Awesome Area Style
 }
 
 .awesome-card {
-  box-shadow: 0px 0px 30px rgba(85, 85, 85, 0.07);
+  box-shadow: 0px 0px 60px 0px rgb(85 85 85 / 16%);
   background-color: #ffffff;
   border-radius: 20px;
   padding: 35px 30px;
@@ -4399,6 +4400,10 @@ Home Three Awesome Area Style
   margin-right: 5px;
   margin-bottom: 30px;
   height: 230px;
+}
+
+.awesome-card-service {
+  height: 90%;
 }
 
 .awesome-card:before {
@@ -4415,6 +4420,12 @@ Home Three Awesome Area Style
   transform: scaleX(0);
 }
 
+.awesome-card-service::before {
+  bottom: 2%;
+  right: 10px;
+  left: 10px;
+  top: 2%;
+}
 
 .awesome-card:after {
   content: '';
@@ -4428,6 +4439,13 @@ Home Three Awesome Area Style
   border-radius: 20px;
   transition: 0.2s;
   transform: scaleY(0);
+}
+
+.awesome-card-service::after {
+  bottom: 2%;
+  right: 10px;
+  left: 10px;
+  top: 2%;
 }
 
 .awesome-card:hover:before,
@@ -4647,11 +4665,11 @@ Home Three Work Process Area Style
 Home Three Boost Your Business Area Style
 ======================================================*/
 .business-experience {
-  margin-left: 75px;
+  /* margin-left: 75px; */
 }
 
 .business-experience .experience-card {
-  box-shadow: 0px 0px 30px rgba(85, 85, 85, 0.1);
+  box-shadow: 0px 0px 60px 0px rgb(85 85 85 / 16%);
   background-color: #ffffff;
   border-radius: 10px;
   padding: 30px 25px;
@@ -4687,6 +4705,10 @@ Home Three Boost Your Business Area Style
   margin-bottom: 0;
   position: relative;
   top: 16px;
+}
+
+.business-experience .experience-image img {
+  border-radius: 30px;
 }
 
 /*
@@ -4838,7 +4860,7 @@ Home Three Our Portfolio Area Style
 
 .carousel .portfolio-card .portfolio-card-body {
   background-color: #ffffff;
-  box-shadow: 0px 0px 30px rgba(85, 85, 85, 0.1);
+  box-shadow: 0px 0px 60px 0px rgb(85 85 85 / 16%);
   border-radius: 0px 0px 10px 10px;
   text-align: center;
   margin-bottom: 30px;
@@ -4859,7 +4881,7 @@ Home Three Our Portfolio Area Style
   opacity: 0;
   visibility: hidden;
   background: linear-gradient(161.45deg, #fe7b46 14.68%, #f73e8f 109.53%);
-  box-shadow: 0px 0px 30px rgba(85, 85, 85, 0.1);
+  box-shadow: 0px 0px 60px 0px rgb(85 85 85 / 16%);
   border-radius: 0px 0px 10px 10px;
   transition: all ease 0.5s;
   z-index: -1;
@@ -4940,19 +4962,57 @@ Home Three What Our Client Say Area Style
   position: relative;
   margin-bottom: 30px;
   transition: all ease 0.5s;
+  height: 90%;
 }
 
-.say-card h4 {
+.say-card:before {
+  content: '';
+  position: absolute;
+  top: 0%;
+  right: 5%;
+  bottom: 0%;
+  left: 5%;
+  border-top: solid 6px var(--primary-01);
+  border-bottom: solid 6px var(--primary-02);
+  border-radius: 20px;
+  transition: 0.2s;
+  transform: scaleX(1.1);
+}
+
+.say-card:after {
+  content: '';
+  position: absolute;
+  top: 5%;
+  right: 0%;
+  bottom: 5%;
+  left: 0%;
+  border-left: solid 6px var(--primary-02);
+  border-right: solid 6px var(--primary-01);
+  border-radius: 20px;
+  transition: 0.2s;
+  transform: scaleY(1.1);
+}
+
+.say-card:hover:before,
+.say-card:hover:after {
+  transform: scale(1);
+  top: 5%;
+  right: 5%;
+  bottom: 5%;
+  left: 5%;
+}
+
+.say-card h5 {
   font-size: 24px;
   margin-bottom: 15px;
 }
 
-.say-card h4 a {
-  color: #000000;
+.say-card h5 a {
+  color: var(--primary-01);
 }
 
-.say-card h4 a:hover {
-  color: #fd7529;
+.say-card h5 a:hover {
+  color: var(--primary-02);
 }
 
 .say-card p {
@@ -5056,8 +5116,13 @@ Services Page Style
   color: #df3400;
 }
 
+.page-banner-heading p {
+  color: var(--secondary);
+}
+
 .page-banner-img {
   text-align: end;
+  width: 85%;
 }
 
 .process-area {
@@ -5350,7 +5415,7 @@ Services Details Page Style
 
 .solution .faq-content .accordion-item .accordion-body {
   background: #ffffff;
-  box-shadow: 0px 0px 30px rgba(85, 85, 85, 0.1);
+  box-shadow: 0px 0px 60px 0px rgb(85 85 85 / 16%);
   border-radius: 0px 0px 10px 10px;
 }
 
@@ -5363,7 +5428,7 @@ Services Details Page Style
   background-color: var(--primary-02);
   /* background-color: #ffffff; */
   box-shadow: unset !important;
-  box-shadow: 0px 0px 30px rgba(85, 85, 85, 0.1);
+  box-shadow: 0px 0px 60px 0px rgb(85 85 85 / 16%);
 }
 
 .solution .faq-content .accordion-button::before {
@@ -5447,12 +5512,12 @@ About Page Style
 
 .experience-area.experience-about-area .business-experience {
   margin-left: 0;
-  margin-right: 90px;
+  /* margin-right: 90px; */
 }
 
 .client-say-area.client-say-about-area .say-card {
   background-color: #ffffff;
-  box-shadow: 0px 0px 30px rgba(85, 85, 85, 0.07);
+  box-shadow: 0px 0px 60px 0px rgb(85 85 85 / 16%);
   border-radius: 20px;
 }
 
@@ -5624,7 +5689,7 @@ FAQ Accordion Page Style
 ======================================================*/
 .pel-address {
   background-color: #ffffff;
-  box-shadow: 0px 0px 30px rgba(85, 85, 85, 0.1);
+  box-shadow: 0px 0px 60px 0px rgb(85 85 85 / 16%);
   border-radius: 10px;
   padding: 22px;
   margin-bottom: 25px;
@@ -7256,8 +7321,8 @@ Preloader Area Style
 
 .ctn-preloader .animation-preloader .spinner {
   animation: spinner 1s infinite linear;
-  border: 3px solid var(--secondary);
-  border-top-color: #fd7529;
+  border: 3px solid var(--primary-01);
+  border-top-color: var(--primary-01);
   margin: 0 auto 3.5em auto;
   border-radius: 50%;
   height: 6em;
