@@ -318,7 +318,7 @@ p:last-child {
   font-size: 16px;
   font-weight: 500;
   display: inline-block;
-  color: #fd7529;
+  color: var(--primary-01);
   border: 1px dashed rgba(122, 28, 208, 0.42);
   border-radius: 30px;
   padding: 6px 28px;
@@ -329,7 +329,7 @@ p:last-child {
   font-size: 16px;
   font-weight: 500;
   display: inline-block;
-  color: #fd7529;
+  color: var(--primary-01);
   margin-bottom: 15px;
 }
 
@@ -342,6 +342,12 @@ p:last-child {
 .section-heading p {
   font-size: 16px;
   color: var(--secondary);
+}
+
+.section-heading span {
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--primary-02);
 }
 
 /*
@@ -952,7 +958,7 @@ Navbar Area Style
   text-align: center;
   border-radius: 50%;
   color: #ffffff;
-  background-color: #fd7529;
+  background-color: var(--primary-01);
   transform: translateY(-50%);
 }
 
@@ -961,7 +967,7 @@ Navbar Area Style
 }
 
 .login .form-check-label {
-  color: #fd7529;
+  color: var(--primary-01);
 }
 
 .desktop-nav .others-options .option-item {
@@ -1040,7 +1046,7 @@ Navbar Area Style
   height: 50px;
   font-size: 18px;
   color: #ffffff;
-  background-color: #fd7529;
+  background-color: var(--primary-01);
   padding-top: 15px;
   padding-left: 20px;
   padding-right: 20px;
@@ -1048,11 +1054,11 @@ Navbar Area Style
 }
 
 .desktop-nav .others-options .option-item:hover .search-btn {
-  color: #fd7529;
+  color: var(--primary-01);
 }
 
 .desktop-nav .others-options .option-item:hover .close-btn {
-  color: #fd7529;
+  color: var(--primary-01);
 }
 
 @keyframes fadeInDown {
@@ -1095,11 +1101,11 @@ Others Option For Responsive Area Style
   margin: 0 2px;
   border-radius: 100%;
   transition: all ease 0.5s;
-  background-color: #fd7529;
+  background-color: var(--primary-01);
 }
 
 .others-option-for-responsive .dot-menu:hover .inner .circle {
-  background-color: #fd7529;
+  background-color: var(--primary-01);
 }
 
 .others-option-for-responsive .container {
@@ -1151,7 +1157,7 @@ Others Option For Responsive Area Style
 .others-option-for-responsive .container .others-options .optional-btn i {
   font-size: 28px;
   margin-right: 0;
-  color: #fd7529 !important;
+  color: var(--primary-01) !important;
   position: relative;
   top: 5px;
 }
@@ -1240,7 +1246,7 @@ Others Option For Responsive Area Style
   height: 50px;
   font-size: 18px;
   color: #ffffff;
-  background-color: #fd7529;
+  background-color: var(--primary-01);
   padding-top: 15px;
   padding-left: 20px;
   padding-right: 20px;
@@ -1248,11 +1254,11 @@ Others Option For Responsive Area Style
 }
 
 .others-option-for-responsive .container .others-options .option-item:hover .search-btn {
-  color: #fd7529;
+  color: var(--primary-01);
 }
 
 .others-option-for-responsive .container .others-options .option-item:hover .close-btn {
-  color: #fd7529;
+  color: var(--primary-01);
 }
 
 .result-pagination.search-pagination {
@@ -1329,8 +1335,6 @@ Banner Area Style
   transition: all ease 0.5s;
   z-index: 1;
 }
-
-.banner-content span a::before {}
 
 .banner-content span a:hover {
   color: #ffffff;
@@ -1468,6 +1472,11 @@ Banner Area Style
   -webkit-animation: Rotate 20s linear infinite;
 }
 
+.img-threats {
+  animation: Rotate 200s linear infinite;
+  -webkit-animation: Rotate 200s linear infinite;
+}
+
 .center-img {
   position: absolute;
   top: 50%;
@@ -1532,7 +1541,7 @@ Banner Area Style
 
 .first-slides.owl-theme .owl-nav [class*="owl-"] {
   color: #ffffff;
-  background-color: #fd7529;
+  background-color: var(--primary-01);
   font-size: 40px;
   width: 50px;
   height: 50px;
@@ -1554,7 +1563,7 @@ Banner Area Style
 
 .first-slides.owl-theme .owl-nav [class*="owl-"]:hover {
   background-color: #ffffff;
-  color: #fd7529;
+  color: var(--primary-01);
 }
 
 /**/
@@ -1586,7 +1595,7 @@ Banner Area Style
 }
 
 .hero-slides.owl-theme .owl-nav [class*="owl-"]:hover {
-  background-color: #fd7529;
+  background-color: var(--primary-01);
   color: #ffffff;
 }
 
@@ -1649,7 +1658,7 @@ Banner Area Style
 }
 
 .fide-slides.owl-theme .owl-nav [class*="owl-"] {
-  color: #fd7529;
+  color: var(--primary-01);
   background-color: #ffffff;
   font-size: 40px;
   width: 50px;
@@ -1671,7 +1680,7 @@ Banner Area Style
 }
 
 .fide-slides.owl-theme .owl-nav [class*="owl-"]:hover {
-  background-color: #fd7529;
+  background-color: var(--primary-01);
   color: #ffffff;
 }
 
@@ -1860,7 +1869,7 @@ Modern Graphics Area Style
   position: absolute;
   top: 2px;
   left: 0;
-  color: #fd7529;
+  color: var(--primary-01);
 }
 
 .modern-info .common-btn {
@@ -2005,11 +2014,11 @@ Our Awesome Services Area Style
 }
 
 .services-card .info h4 a {
-  color: #000000;
+  color: var(--primary-01);
 }
 
 .services-card .info h4 a:hover {
-  color: #fd7529;
+  color: var(--primary-02);
 }
 
 .services-card.one {
@@ -2428,7 +2437,7 @@ Pricing Plan Area Style
   top: 2px;
   right: 10px;
   font-size: 18px;
-  color: #fd7529;
+  color: var(--primary-01);
 }
 
 .pricing-content .pricing-card ul li .panel {
@@ -2602,7 +2611,7 @@ Meet Our Expert Team Area Style
 }
 
 .team-card .team-social ul li i {
-  color: #fd7529;
+  color: var(--primary-01);
   background-color: #ffffff;
   width: 36px;
   height: 36px;
@@ -2613,7 +2622,7 @@ Meet Our Expert Team Area Style
 }
 
 .team-card .team-social ul li i:hover {
-  background-color: #fd7529;
+  background-color: var(--primary-01);
   color: #ffffff;
 }
 
@@ -2854,7 +2863,7 @@ Testimonials Area Style
 
 .testimonials-slider.owl-carousel.owl-theme .owl-dots .owl-dot.active span {
   width: 27px;
-  background-color: #fd7529;
+  background-color: var(--primary-01);
 }
 
 /*
@@ -2916,7 +2925,7 @@ See Our Latest News Area Style
 }
 
 .blog-card .single .blog-content h4 a:hover {
-  color: #fd7529;
+  color: var(--primary-01);
 }
 
 .blog-card .single .blog-content ul {
@@ -2947,7 +2956,7 @@ See Our Latest News Area Style
 }
 
 .blog-card .single .blog-content ul li a:hover {
-  color: #fd7529;
+  color: var(--primary-01);
 }
 
 /*
@@ -3221,7 +3230,7 @@ Home Tow banner Area Style
   display: -webkit-inline-box;
   margin-bottom: 18px;
   font-weight: 500;
-  color: #fd7529;
+  color: var(--primary-01);
   border-radius: 5px;
   padding: 11px 21px;
   background: rgba(255, 255, 255, 0.06);
@@ -3391,7 +3400,7 @@ Home Tow Our Best Service Area Style
 }
 
 .service-card h4 a:hover {
-  color: #fd7529;
+  color: var(--primary-01);
 }
 
 .service-card p {
@@ -3824,7 +3833,7 @@ Home Tow How It Works Area Style
 
 .works-categories .popup-image .popup-btn i {
   font-size: 25px;
-  color: #fd7529;
+  color: var(--primary-01);
 }
 
 .single-works {
@@ -4096,7 +4105,7 @@ Home Tow Our Client Feedback Area Style
 }
 
 .client-slider.owl-carousel.owl-theme .owl-nav [class*="owl-"]:hover {
-  background-color: #fd7529;
+  background-color: var(--primary-01);
   color: #ffffff;
 }
 
@@ -4180,7 +4189,7 @@ Home Tow See Our Latest Blog Area Style
 }
 
 .latest-card .latest-body ul li a:hover {
-  color: #fd7529;
+  color: var(--primary-01);
 }
 
 .latest-card .latest-body h4 {
@@ -4195,7 +4204,7 @@ Home Tow See Our Latest Blog Area Style
 }
 
 .latest-card .latest-body h4 a:hover {
-  color: #fd7529;
+  color: var(--primary-01);
 }
 
 /*
@@ -4215,7 +4224,7 @@ Home Three See Our Latest Blog Area Style
 
 .navbar-area.navbar-area-3 .desktop-nav .navbar .navbar-nav .nav-item a.active,
 .navbar-area.navbar-area-3 .desktop-nav .navbar .navbar-nav .nav-item a:hover {
-  color: #fd7529;
+  color: var(--primary-01);
 }
 
 .navbar-area.navbar-area-3 .desktop-nav .others-options .option-item .search-btn {
@@ -4292,7 +4301,7 @@ Home Three See Our Latest Blog Area Style
 .hero-content span {
   font-weight: 500;
   font-size: 16px;
-  color: #fd7529;
+  color: var(--primary-01);
   background: rgba(254, 147, 51, 0.1);
   border-radius: 5px;
   padding: 10px 25px;
@@ -4478,11 +4487,7 @@ Home Three Awesome Area Style
   left: 0;
   right: 0;
   bottom: 0;
-  background: linear-gradient(180deg,
-      #7783f4 -0.29%,
-      #a92c80 47.99%,
-      #e71372 82.71%,
-      #ff0a6c 99.12%);
+  background: var(--linear-gradient-primary);
   width: 64px;
   height: 60px;
   line-height: 50px;
@@ -4511,41 +4516,24 @@ Home Three Awesome Area Style
 }
 
 .awesome-card.two .awesome-image::before {
-  background: linear-gradient(180deg,
-      #ff992e -0.29%,
-      #f88138 21.29%,
-      #e74453 66.59%,
-      #da1467 99.12%);
+  background: var(--linear-gradient-primary-revers);
+  ;
 }
 
 .awesome-card.three .awesome-image::before {
-  background: linear-gradient(180deg,
-      #eec32d -0.29%,
-      #fd754d -0.28%,
-      #f63d90 99.1%,
-      #f36e2b 99.11%);
+  background: var(--linear-gradient-primary);
 }
 
 .awesome-card.four .awesome-image::before {
-  background: linear-gradient(180deg,
-      #eec32d -0.29%,
-      #efab2d 19.69%,
-      #f36e2b 61.62%,
-      #f6322a 99.12%);
+  background: var(--linear-gradient-primary-revers);
 }
 
 .awesome-card.five .awesome-image::before {
-  background: linear-gradient(180deg,
-      #d61669 -0.29%,
-      #ef4445 60.92%,
-      #fc5c33 99.12%);
+  background: var(--linear-gradient-primary);
 }
 
 .awesome-card.six .awesome-image::before {
-  background: linear-gradient(180deg,
-      #a30a7c -0.29%,
-      #d541a5 64.81%,
-      #eb59b7 99.12%);
+  background: var(--linear-gradient-primary-revers);
 }
 
 .best-service-area .awesome-card .awesome-image {
@@ -4579,9 +4567,13 @@ Home Three Business Success Area Style
   position: absolute;
   top: 1px;
   left: 0;
-  color: #fd7529;
+  color: var(--primary-01);
   font-weight: 400;
   font-size: 18px;
+}
+
+.marketing-content .info p {
+  color: var(--primary-01);
 }
 
 .marketing-content .default-btn {
@@ -4599,7 +4591,7 @@ Home Three Business Success Area Style
   height: 100%;
   z-index: -1;
   border-radius: 5px;
-  background: linear-gradient(95.32deg, #f73a93 -0.67%, #ff823e 73.27%);
+  background: var(--linear-gradient-primary);
   opacity: 0;
   visibility: hidden;
   transition: all ease 0.5s;
@@ -4812,7 +4804,7 @@ Home Three Popup Area Style
 
 .popup-area .popup-img .popup-btn i {
   font-size: 28px;
-  color: #fd7529;
+  color: var(--primary-01);
   background: #ffffff;
   width: 70px;
   height: 70px;
@@ -4833,7 +4825,7 @@ Home Three Popup Area Style
 
 .popup-area .popup-img .popup-btn:hover i {
   color: #ffffff;
-  background-color: #fd7529;
+  background-color: var(--primary-01);
 }
 
 .popup-area .popup-img .popup-img-1 {
@@ -4944,7 +4936,7 @@ Home Three Our Portfolio Area Style
 
 .portfolio-slider.owl-carousel.owl-theme .owl-nav [class*="owl-"]:hover,
 .expert-slider.owl-carousel.owl-theme .owl-nav [class*="owl-"]:hover {
-  background-color: #fd7529;
+  background-color: var(--primary-01);
   color: #ffffff;
 }
 
@@ -4976,7 +4968,7 @@ Home Three What Our Client Say Area Style
   border-bottom: solid 6px var(--primary-02);
   border-radius: 20px;
   transition: 0.2s;
-  transform: scaleX(1.1);
+  transform: scaleX(0);
 }
 
 .say-card:after {
@@ -4990,12 +4982,12 @@ Home Three What Our Client Say Area Style
   border-right: solid 6px var(--primary-01);
   border-radius: 20px;
   transition: 0.2s;
-  transform: scaleY(1.1);
+  transform: scaleY(0);
 }
 
 .say-card:hover:before,
 .say-card:hover:after {
-  transform: scale(1);
+  transform: scale(1.1);
   top: 5%;
   right: 5%;
   bottom: 5%;
@@ -5109,11 +5101,15 @@ Services Page Style
 }
 
 .page-banner-heading ul li a {
-  color: #fd7529;
+  color: var(--primary-01);
 }
 
 .page-banner-heading ul li a:hover {
-  color: #df3400;
+  color: var(--primary-02)
+}
+
+.page-banner-heading ul li span {
+  color: var(--primary-01);
 }
 
 .page-banner-heading p {
@@ -5211,12 +5207,12 @@ Services Details Page Style
   top: 18px;
   right: 15px;
   font-size: 18px;
-  color: #fd7529;
+  color: var(--primary-01);
   transition: all ease 0.5s;
 }
 
 .service-details-card ul li:hover {
-  background-color: #fd7529;
+  background-color: var(--primary-01);
 }
 
 .service-details-card ul li:hover a {
@@ -5268,7 +5264,7 @@ Services Details Page Style
 
 .banner-offer .info span {
   display: block;
-  color: #fd7529;
+  color: var(--primary-01);
   margin-bottom: 10px;
 }
 
@@ -5346,7 +5342,7 @@ Services Details Page Style
   top: 2px;
   left: 0;
   font-size: 18px;
-  color: #fd7529;
+  color: var(--primary-01);
 }
 
 .development-to .project-info .project-image img {
@@ -5549,7 +5545,7 @@ Team Details Page Style
 }
 
 .pagination-team .pagination .page-item .page-link:hover {
-  background-color: #fd7529;
+  background-color: var(--primary-01);
   color: #ffffff;
 }
 
@@ -5724,7 +5720,7 @@ FAQ Accordion Page Style
 
 .pel-address ul li .icon i {
   font-size: 35px;
-  color: #fd7529;
+  color: var(--primary-01);
 }
 
 .pel-address ul li p {
@@ -5739,7 +5735,7 @@ FAQ Accordion Page Style
 }
 
 .pel-address ul li a:hover {
-  color: #fd7529;
+  color: var(--primary-01);
 }
 
 /*
@@ -5932,7 +5928,7 @@ Blog Page Style
   position: absolute;
   top: 5px;
   left: 0;
-  color: #fd7529;
+  color: var(--primary-01);
 }
 
 .categories-box ul li span {
@@ -5943,7 +5939,7 @@ Blog Page Style
 }
 
 .categories-box ul li a:hover {
-  color: #fd7529;
+  color: var(--primary-01);
 }
 
 .tags {
@@ -6012,7 +6008,7 @@ Blog Page Style
 }
 
 .tags ul li a:hover {
-  background-color: #fd7529;
+  background-color: var(--primary-01);
   color: #ffffff;
 }
 
@@ -6103,7 +6099,7 @@ Blog Page Style
 }
 
 .recent-post ul li .info h5 a:hover {
-  color: #fd7529;
+  color: var(--primary-01);
 }
 
 /*
@@ -6253,7 +6249,7 @@ Blog Details Page Style
 }
 
 .blog-details-content .share-social .share-social-icon li a i {
-  color: #fd7529;
+  color: var(--primary-01);
   border: 1px solid rgba(253, 117, 41, 0.97);
   width: 36px;
   height: 36px;
@@ -6443,7 +6439,7 @@ Portfolio Page Style
 
 .portfolio-area .view-gallery .single-view span {
   display: block;
-  color: #fd7529;
+  color: var(--primary-01);
   margin-bottom: 15px;
 }
 
@@ -6526,7 +6522,7 @@ Portfolio Details Page Style
   top: 2px;
   left: 0;
   font-size: 18px;
-  color: #fd7529;
+  color: var(--primary-01);
 }
 
 .portfolio-details-content .worksit {
@@ -6604,7 +6600,7 @@ Portfolio Details Page Style
 }
 
 .showcase .details-image .single-view span {
-  color: #fd7529;
+  color: var(--primary-01);
   display: block;
   margin-bottom: 16px;
 }
@@ -6712,7 +6708,7 @@ Portfolio Details Page Style
   top: 2px;
   left: 0;
   font-size: 28px;
-  color: #fd7529;
+  color: var(--primary-01);
   background-color: #ffffff;
   width: 60px;
   height: 60px;
@@ -6733,7 +6729,7 @@ Portfolio Details Page Style
 }
 
 .halp-card ul li a:hover {
-  color: #fd7529;
+  color: var(--primary-01);
 }
 
 /*
@@ -6782,7 +6778,7 @@ Privacy Policy Area Style
   position: absolute;
   left: 0;
   top: 1px;
-  color: #fd7529;
+  color: var(--primary-01);
   font-size: 20px;
 }
 
@@ -6805,7 +6801,7 @@ Our Terms & Conditions Page Style
 }
 
 .terms-conditions .title span {
-  color: #fd7529;
+  color: var(--primary-01);
   display: block;
   margin-bottom: 10px;
 }
@@ -6853,7 +6849,7 @@ Our Terms & Conditions Page Style
   left: 0;
   top: 1px;
   font-size: 20px;
-  color: #fd7529;
+  color: var(--primary-01);
 }
 
 .terms-conditions .conditions-content h3 {
@@ -6892,7 +6888,7 @@ Our Terms & Conditions Page Style
   font-size: 300px;
   line-height: 1;
   font-weight: 700;
-  color: #fd7529;
+  color: var(--primary-01);
   margin-top: -40px;
 }
 
@@ -6918,7 +6914,7 @@ Our Terms & Conditions Page Style
 .error-area .error-content-wrap p {
   margin: 20px 0 20px;
   font-size: 19px;
-  color: #fd7529;
+  color: var(--primary-01);
 }
 
 .error-area .error-content-wrap .default-btn.two {
@@ -6997,7 +6993,7 @@ Coming Soon Area Style
 }
 
 .coming-soon-area .coming-soon-content #timer div {
-  background-color: #fd7529;
+  background-color: var(--primary-01);
   color: #ffffff;
   width: 130px;
   height: 130px;
@@ -7140,7 +7136,7 @@ Login Register Area Style
   transition: var(--transition);
   bottom: 0;
   content: "";
-  background-color: #fd7529;
+  background-color: var(--primary-01);
 }
 
 .login-form form .default-btn {
