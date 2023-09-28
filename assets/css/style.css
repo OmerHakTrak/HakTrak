@@ -370,7 +370,7 @@ Navbar Area Style
   animation: 500ms ease-in-out 0s normal none 1 running fadeInDown;
   box-shadow: 0 0 20px 3px rgba(0, 0, 0, 0.05);
   background-color: #000000;
-  border-bottom: 1px solid #000000;
+  /* border-bottom: 1px solid #000000; */
 }
 
 .navbar-area .container-fluid {
