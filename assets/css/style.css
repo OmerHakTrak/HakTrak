@@ -302,7 +302,7 @@ p:last-child {
 .section-title h2 {
   font-size: 40px;
   margin-bottom: 0;
-  color: #000000;
+  color: var(--primary-02);
 }
 
 .section-title p {
@@ -336,7 +336,7 @@ p:last-child {
 .section-heading h2 {
   font-size: 48px;
   margin-bottom: 20px;
-  color: #000000;
+  color: var(--primary-02);
 }
 
 .section-heading p {
@@ -4545,6 +4545,12 @@ Home Three Business Success Area Style
 ======================================================*/
 .marketing-content {
   max-width: 650px;
+  height: 100%;
+  box-shadow: 0px 0px 60px 0px rgb(85 85 85 / 16%);
+  /* background-color: #ffffff; */
+  border-radius: 10px;
+  padding: 30px 25px;
+  margin-bottom: 30px;
 }
 
 .marketing-content .section-heading .subtitle {
