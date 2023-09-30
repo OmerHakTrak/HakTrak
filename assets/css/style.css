@@ -2690,6 +2690,10 @@ Meet Our Expert Team Area Style
   visibility: visible;
 }
 
+.owl-stage-outer {
+  background: #fff;
+}
+
 .team-slider.owl-theme .owl-nav [class*="owl-"],
 .awesome-slider.owl-theme .owl-nav [class*="owl-"] {
   color: #ffffff;
@@ -4438,6 +4442,7 @@ Home Three Awesome Area Style
   margin-right: 5px;
   margin-bottom: 30px;
   height: 230px;
+
 }
 
 .awesome-card-service {
@@ -4528,20 +4533,32 @@ Home Three Awesome Area Style
 .awesome-card .awesome-image img {
   width: 40px;
   height: 40px;
+  z-index: 1024;
+  position: relative;
 }
 
 .awesome-card h4 {
   font-size: 24px;
   margin-top: 20px;
   margin-bottom: 15px;
+  z-index: 1024;
+  position: relative;
 }
 
 .awesome-card h4 a {
   color: var(--primary-01);
+  z-index: 1024;
+  position: relative;
 }
 
 .awesome-card h4 a:hover {
   color: var(--primary-02);
+}
+
+.awesome-card p a {
+  color: var(--primary-01);
+  z-index: 1024;
+  position: relative;
 }
 
 .awesome-card.two .awesome-image::before {
@@ -5153,6 +5170,10 @@ Services Page Style
 .page-banner-img {
   text-align: end;
   width: 85%;
+}
+
+.page-banner-img-product {
+  width: unset;
 }
 
 .process-area {
@@ -5868,6 +5889,7 @@ Contact Us Page Style
   width: 100%;
   height: 550px;
   margin-bottom: -8px;
+  border-radius: 30px;
 }
 
 /*
