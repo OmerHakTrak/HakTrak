@@ -1795,6 +1795,10 @@
   .features-card {
     height: unset !important;
   }
+
+  .team-card {
+    height: 100%;
+  }
 }
 
 /* Min width 576px to Max width 767px */
@@ -1859,6 +1863,10 @@
   .graphics-img .graphics-img-3 {
     width: auto;
     left: -20px;
+  }
+
+  .team-card {
+    height: 100%;
   }
 
   .task-img .task-img-2 {
@@ -2237,6 +2245,10 @@
 
   .graphics-img .graphic-shape-2 {
     display: none;
+  }
+
+  .team-card {
+    height: 100%;
   }
 
   .services-area .service-shape-1 {
@@ -3666,6 +3678,10 @@
   .graphics-img .graphic-shape-2 {
     top: 35px;
     right: -5px;
+  }
+
+  .team-card {
+    height: 100%;
   }
 
   .team-card .team-img img {
