@@ -106,7 +106,7 @@
   }
 
   .mobile-responsive-nav .mobile-responsive-menu.mean-container a.meanmenu-reveal span {
-    background: #ffffff;
+    background: var(--primary-01);
     height: 4px;
     margin-top: -8px;
     border-radius: 0;
