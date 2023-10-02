@@ -5102,6 +5102,8 @@ Services Page Style
   padding-bottom: 35px;
   position: relative;
   height: 90vh;
+  display: flex;
+  align-items: center;
 }
 
 .page-banner-area .page-shape-1 {
