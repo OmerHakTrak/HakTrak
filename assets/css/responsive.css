@@ -260,6 +260,10 @@
     margin-top: 30px;
   }
 
+  .img-block img {
+    height: auto;
+  }
+
   .banner-img .banner-shape-1 {
     display: none;
   }
@@ -1267,6 +1271,7 @@
   .page-banner-area {
     padding-top: 130px;
     padding-bottom: 60px;
+    height: auto;
   }
 
   .page-banner-area .page-shape-1 {

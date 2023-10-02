@@ -359,7 +359,9 @@ Navbar Area Style
 ======================================================*/
 .navbar-area {
   border-bottom: 1px solid rgba(255, 255, 255, 0.19);
-  background: var(--linear-gradient-primary);
+  /* background: var(--linear-gradient-primary); */
+  background: #ffffff;
+  box-shadow: var(--box-shadow-primary);
   /* background-color: transparent; */
   padding-top: 24px;
   padding-bottom: 24px;
@@ -372,8 +374,9 @@ Navbar Area Style
   z-index: 999;
   position: fixed;
   animation: 500ms ease-in-out 0s normal none 1 running fadeInDown;
-  box-shadow: 0 0 20px 3px rgba(0, 0, 0, 0.05);
-  background-color: #000000;
+  box-shadow: var(--box-shadow-primary);
+  /* background-color: #000000; */
+  background-color: #ffffff;
   /* border-bottom: 1px solid #000000; */
 }
 
@@ -382,7 +385,8 @@ Navbar Area Style
 }
 
 .navbar-area .navbar-brand .main-logo {
-  width: 30%;
+  width: 50%;
+  /* width: 30%; */
   height: 100%;
 }
 
@@ -424,7 +428,7 @@ Navbar Area Style
 
 .desktop-nav .navbar .navbar-nav .nav-item a {
   font-size: 18px;
-  color: #ffffff;
+  color: var(--primary-02);
   line-height: 1;
   position: relative;
   font-weight: 500;
@@ -479,7 +483,8 @@ Navbar Area Style
 .desktop-nav .navbar .navbar-nav .nav-item:hover a,
 .desktop-nav .navbar .navbar-nav .nav-item:focus a,
 .desktop-nav .navbar .navbar-nav .nav-item.active a {
-  color: var(--primary-01);
+  color: var(--primary-02);
+  /* color: var(--primary-01); */
 }
 
 .desktop-nav .navbar .navbar-nav .nav-item .dropdown-menu {
@@ -504,7 +509,7 @@ Navbar Area Style
 }
 
 .desktop-nav .navbar .navbar-nav .nav-item .dropdown-menu li a {
-  color: #000000;
+  color: var(--primary-02);
   padding: 16px;
   border-bottom: 1px dashed #e3e3e3;
   margin: 0;
@@ -1275,9 +1280,10 @@ Banner Area Style
 .banner-area {
   padding-top: 180px;
   padding-bottom: 160px;
+  box-shadow: var(--box-shadow-primary);
   /* background-image: url("../../assets/images/banner-bg.jpg"); */
   /* background-image: url("https://templates.hibotheme.com/soqu/default/assets/images/banner-bg.jpg"); */
-  background: rgb(87, 164, 161);
+  /* background: rgb(255, 255, 255); */
   background: var(--linear-gradient-primary);
   background-position: center center;
   background-repeat: no-repeat;
@@ -1462,7 +1468,7 @@ Banner Area Style
 
 .img-block {
   /* background-image: url("assets/images/hero/Final.png"); */
-  height: 100%;
+  height: 2;
   width: 100%;
   position: relative;
   border-radius: 50%;
@@ -1474,6 +1480,11 @@ Banner Area Style
   -webkit-justify-content: center;
   animation: Rotate 20s linear infinite;
   -webkit-animation: Rotate 20s linear infinite;
+}
+
+.img-block img {
+  width: unset !important;
+  height: 450px;
 }
 
 .img-threats {
@@ -2606,6 +2617,10 @@ Meet Our Expert Team Area Style
   width: auto;
   height: auto;
   border-radius: 50%;
+}
+
+.team-card .team-img .reverse-img {
+  transform: scaleX(-1);
 }
 
 .team-card .team-social {
@@ -5086,6 +5101,7 @@ Services Page Style
   padding-top: 165px;
   padding-bottom: 35px;
   position: relative;
+  height: 90vh;
 }
 
 .page-banner-area .page-shape-1 {
